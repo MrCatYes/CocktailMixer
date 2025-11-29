@@ -1,4 +1,4 @@
-# Projet_integrateur
+# Cocktail Mixer website
 
 ## Guide d'installation
 
