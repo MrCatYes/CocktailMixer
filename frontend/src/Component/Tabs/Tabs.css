@@ -1,0 +1,39 @@
+
+
+/* Navigation */
+#tab {
+    display: flex;
+    gap: 1.5rem;
+}
+
+#nav-link {
+    position: relative;
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+/* Ligne animée au survol */
+#nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #00bfff;
+    transition: width 0.3s ease-in-out;
+}
+
+#nav-link:hover::after {
+    width: 100%;
+}
+
+#nav-link.active::after {
+    width: 100%;
+}
+
+#nav-link.active {
+    color: #00bfff;
+}
